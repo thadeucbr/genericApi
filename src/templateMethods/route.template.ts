@@ -1,33 +1,31 @@
 import { Router, Request, Response } from 'express';
 
-type methodType = 'get' | 'post' | 'put' | 'delete' | 'patch';
+export type methodType = 'get' | 'post' | 'put' | 'delete' | 'patch';
+
+interface RouteConfig {
+  path: string;
+  method: methodType;
+  controller: any;
+}
 
 export default class RouteTemplate {
   private router = Router();
-  private methods = {
-    get: this.router.get.bind(this.router),
-    post: this.router.post.bind(this.router),
-    put: this.router.put.bind(this.router),
-    delete: this.router.delete.bind(this.router),
-    patch: this.router.patch.bind(this.router),
-  };
-  private path: string;
-  private method: methodType;
-  private controller: any;
+  private routes: RouteConfig[];
 
-  constructor(path: string, method: methodType, controller: any) {
-    this.path = path;
-    this.method = method;
-    this.controller = controller;
+  constructor(routes: RouteConfig[]) {
+    this.routes = routes;
   }
 
-  createRoute() {
-    return this.methods[this.method](
-      this.path,
-      (req: Request, res: Response) => {
-        const controller = new this.controller();
-        controller.execute(req, res);
-      },
-    );
+  createRoutes() {
+    this.routes.forEach(({ path, method, controller }) => {
+      this.router[method](path, (req: Request, res: Response) => {
+        const ctrl = new controller();
+        ctrl.execute(req, res);
+      });
+    });
+  }
+
+  getRouter() {
+    return this.router;
   }
 }
