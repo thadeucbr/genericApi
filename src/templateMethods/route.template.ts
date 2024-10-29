@@ -26,7 +26,7 @@ export default class RouteTemplate {
       this.path,
       (req: Request, res: Response) => {
         const controller = new this.controller();
-        controller.handle(req, res);
+        controller.execute(req, res);
       },
     );
   }
