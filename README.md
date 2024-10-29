@@ -37,9 +37,9 @@ Este projeto visa proporcionar uma base sólida para a criação de APIs RESTful
 
 2. Instale as dependências:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 3. Configure suas variáveis de ambiente (exemplo: .env).
 
@@ -67,9 +67,9 @@ genericApi/
 
 Para iniciar a aplicação, execute o seguinte comando:
 
-  ```bash
-  npm start
-  ```
+```bash
+npm start
+```
 
 A API estará disponível em <http://localhost:3000>.
 

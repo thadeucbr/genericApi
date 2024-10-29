@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { ResponseType } from '../types/templateMethods/controller.template.types';
 
-export default class ControllerTemplate { 
+export default class ControllerTemplate {
   req: Request;
   res: Response;
 
@@ -13,7 +13,7 @@ export default class ControllerTemplate {
   okResponse(data: any) {
     this.customResponse({ status: 200, data: { status: 'Success', data } });
   }
-  
+
   createdResponse(data: any) {
     this.customResponse({ status: 201, data: { status: 'Created', data } });
   }
@@ -39,7 +39,10 @@ export default class ControllerTemplate {
   }
 
   internalServerErrorResponse() {
-    this.customResponse({ status: 500, data: { status: 'Internal Server Error' } }); 
+    this.customResponse({
+      status: 500,
+      data: { status: 'Internal Server Error' },
+    });
   }
 
   customResponse({ status, data }: ResponseType) {

@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2022",                          // Alvo moderno do ECMAScript
-    "module": "ESNext",                          // Usar módulos ESNext
-    "lib": ["ES2022", "DOM"],                    // Incluir bibliotecas modernas
-    "strict": true,                              // Ativar todas as verificações de tipo estritas
-    "esModuleInterop": true,                     // Habilitar interoperabilidade entre módulos CommonJS e ES
-    "skipLibCheck": true,                        // Ignorar verificações de tipo em arquivos de declaração
-    "forceConsistentCasingInFileNames": true,   // Manter consistência em nomes de arquivos
-    "moduleResolution": "Node",                  // Resolução de módulo no estilo Node.js
-    "resolveJsonModule": true,                   // Permitir a importação de arquivos JSON
-    "outDir": "./dist",                          // Diretório de saída para arquivos compilados
-    "rootDir": "./src",                          // Diretório raiz para os arquivos de entrada
-    "declaration": true,                          // Gerar arquivos de declaração (.d.ts)
-    "sourceMap": true,                           // Gerar mapas de fonte para depuração
-    "noImplicitAny": true,                       // Proibir o uso do tipo 'any' implícito
-    "noUnusedLocals": true,                      // Erro se houver variáveis locais não utilizadas
-    "noUnusedParameters": true                    // Erro se houver parâmetros não utilizados
+    "target": "ES2022", // Alvo moderno do ECMAScript
+    "module": "ESNext", // Usar módulos ESNext
+    "lib": ["ES2022", "DOM"], // Incluir bibliotecas modernas
+    "strict": true, // Ativar todas as verificações de tipo estritas
+    "esModuleInterop": true, // Habilitar interoperabilidade entre módulos CommonJS e ES
+    "skipLibCheck": true, // Ignorar verificações de tipo em arquivos de declaração
+    "forceConsistentCasingInFileNames": true, // Manter consistência em nomes de arquivos
+    "moduleResolution": "Node", // Resolução de módulo no estilo Node.js
+    "resolveJsonModule": true, // Permitir a importação de arquivos JSON
+    "outDir": "./dist", // Diretório de saída para arquivos compilados
+    "rootDir": "./src", // Diretório raiz para os arquivos de entrada
+    "declaration": true, // Gerar arquivos de declaração (.d.ts)
+    "sourceMap": true, // Gerar mapas de fonte para depuração
+    "noImplicitAny": true, // Proibir o uso do tipo 'any' implícito
+    "noUnusedLocals": true, // Erro se houver variáveis locais não utilizadas
+    "noUnusedParameters": true // Erro se houver parâmetros não utilizados
   },
-  "include": ["src/**/*"],                       // Incluir arquivos de origem
-  "exclude": ["node_modules", "dist"]           // Excluir diretórios não necessários
+  "include": ["src/**/*"], // Incluir arquivos de origem
+  "exclude": ["node_modules", "dist"] // Excluir diretórios não necessários
 }
