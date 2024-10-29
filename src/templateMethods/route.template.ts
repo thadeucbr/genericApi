@@ -19,8 +19,8 @@ export default class RouteTemplate {
   createRoutes() {
     this.routes.forEach(({ path, method, controller }) => {
       this.router[method](path, (req: Request, res: Response) => {
-        const ctrl = new controller();
-        ctrl.execute(req, res);
+        const ctrl = new controller(req, res);
+        ctrl.execute();
       });
     });
   }

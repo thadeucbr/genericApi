@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022", // Alvo moderno do ECMAScript
-    "module": "ESNext", // Usar módulos ESNext
+    "module": "commonjs", // Usar módulos ESNext
     "lib": ["ES2022", "DOM"], // Incluir bibliotecas modernas
     "strict": true, // Ativar todas as verificações de tipo estritas
     "esModuleInterop": true, // Habilitar interoperabilidade entre módulos CommonJS e ES

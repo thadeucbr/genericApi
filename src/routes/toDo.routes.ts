@@ -6,11 +6,11 @@ import UpdateToDoController from '../controllers/toDo/updateToDo.controller';
 import ListToDosController from '../controllers/toDo/listToDos.controller';
 
 const routes: { path: string; method: methodType; controller: any }[] = [
-  { path: 'todo', method: 'post', controller: CreateToDoController },
-  { path: 'todo/:id', method: 'delete', controller: DeleteToDoController },
-  { path: 'todo/:id', method: 'get', controller: FindToDoController },
-  { path: 'todo/:id', method: 'put', controller: UpdateToDoController },
-  { path: 'todo', method: 'get', controller: ListToDosController },
+  { path: '/todo', method: 'post', controller: CreateToDoController },
+  { path: '/todo/:id', method: 'delete', controller: DeleteToDoController },
+  { path: '/todo/:id', method: 'get', controller: FindToDoController },
+  { path: '/todo/:id', method: 'put', controller: UpdateToDoController },
+  { path: '/todo', method: 'get', controller: ListToDosController },
 ];
 
 const routeTemplate = new RouteTemplate(routes);

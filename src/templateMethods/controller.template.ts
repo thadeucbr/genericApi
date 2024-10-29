@@ -46,6 +46,7 @@ export default class ControllerTemplate {
   }
 
   customResponse({ status, data }: ResponseType) {
+    console.log(status)
     this.res.status(status).send(data);
   }
 }
