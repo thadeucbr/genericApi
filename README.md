@@ -44,6 +44,7 @@ Este projeto visa proporcionar uma base sólida para a criação de APIs RESTful
 3. Configure suas variáveis de ambiente (exemplo: .env).
 
 ## Estrutura do Projeto
+
 ```
 genericApi/
 ├── src/
@@ -59,6 +60,7 @@ genericApi/
 ├── package.json           # Gerenciador de pacotes
 └── README.md              # Este arquivo
 ```
+
 ## Uso
 
 Para iniciar a aplicação, execute o seguinte comando:
