@@ -57,6 +57,8 @@ genericApi/
 ├── tests/                 # Testes automatizados
 ├── .env                   # Variáveis de ambiente
 ├── .gitignore             # Arquivo gitignore
+├── eslint.config.mjs      # Configuração do ESLint
+├── .prettierrc            # Configuração do Prettier
 ├── package.json           # Gerenciador de pacotes
 └── README.md              # Este arquivo
 ```
